@@ -11,11 +11,16 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
 </head>
 
 <body class="bg-[url(images/restaurant.jpg)] w-full min-h-screen">
-    <header class="">
-        <section class="">
+    <header id="home-section" class="">
+        <section  class="">
             <div class="navbar shadow-sm ">
                 <div class="navbar-start">
                     <div class="dropdown">
@@ -29,7 +34,7 @@
                         <ul tabindex="-1"
                             class="menu menu-sm dropdown-content rounded-box z-1 mt-3 w-52 p-2 shadow text-white">
                             <li class="text-white font-bold"><a>Home</a></li>
-                            <li class="text-white font-bold"><a>Bangladeshi</a></li>
+                            <li onclick="bangladeshiMenu()" class="text-white font-bold"><a>Bangladeshi</a></li>
                             <li class="text-white font-bold"><a>Italian</a></li>
                             <li class="text-white font-bold"><a>American</a></li>
                             <li class="text-white font-bold"><a>Chinese</a></li>
@@ -41,7 +46,7 @@
                 <div class="navbar-center hidden lg:flex ml-48">
                     <ul class="menu menu-horizontal px-1">
                         <li class="text-white text-2xl font-bold"><a>Home</a></li>
-                        <li class="text-white text-2xl font-bold"><a>Bangladeshi</a></li>
+                        <li onclick="bangladeshiMenu()" class="text-white text-2xl font-bold"><a>Bangladeshi</a></li>
                         <li class="text-white text-2xl font-bold"><a>Italian</a></li>
                         <li class="text-white text-2xl font-bold"><a>American</a></li>
                         <li class="text-white text-2xl font-bold"><a>Chinese</a></li>
@@ -53,7 +58,7 @@
                 </div>
             </div>
         </section>
-        <section class="mt-48 ml-48 flex gap-48 hidden">
+        <section id="main-header" class="mt-48 ml-48 flex gap-48 ">
             <div>
                 <h4 class="text-white text-2xl font-bold">culinary odyssey</h4>
                 <h1 class="text-white text-8xl font-bold">EXPERIENCE THE <br>
@@ -74,9 +79,9 @@
 
     <main>
         <!-- Bangladeshi -->
-        <section class="">
+        <section id="roaming-header" class="hidden">
             <!-- no need section  -->
-            <header class="hidden">
+            <header class="">
 
                 <div class="navbar shadow-sm ">
                     <div class="navbar-start">
@@ -115,20 +120,26 @@
                     </div>
                 </div>
             </header>
-            <header class="flex flex-col justify-center items-center mt-10">
-                <div class="navbar-center hidden lg:flex">
-                    <ul class="menu menu-horizontal px-1 border-b-3 border-yellow-400 gap-16">
-                        <li class="text-white text-base font-bold"><a>Biriyani(2)</a></li>
-                        <li class="text-white text-base font-bold"><a>Rice(4)</a></li>
-                        <li class="text-white text-base font-bold"><a>Fish(3)</a></li>
-                        <li class="text-white text-base font-bold"><a>Bhorta(4)</a></li>
-                        <li class="text-white text-base font-bold"><a>Beverage(2)</a></li>
-                        <li class="text-white text-base font-bold"><a>Dessert(3)</a></li>
-                    </ul>
-                </div>
-            </header>
+        </section>
+
+        <!-- will have to hide this section always -->
+
+        <header id="bangladeshi-header" class="flex flex-col justify-center items-center mt-10 hidden">
+            <div class="navbar-center hidden lg:flex">
+                <ul class="menu menu-horizontal px-1 border-b-3 border-yellow-400 gap-16">
+                    <li class="text-white text-base font-bold"><a href="#biriyani">Biriyani(2)</a></li>
+                    <li class="text-white text-base font-bold"><a href="#rice">Rice(4)</a></li>
+                    <li class="text-white text-base font-bold"><a href="#fish">Fish(4)</a></li>
+                    <li class="text-white text-base font-bold"><a href="#bhorta">Bhorta(4)</a></li>
+                    <li class="text-white text-base font-bold"><a href="#beverage">Beverage(4)</a></li>
+                    <li class="text-white text-base font-bold"><a href="#dessert">Dessert(3)</a></li>
+                </ul>
+            </div>
+        </header>
+        <section id="bd-menu" class="hidden">
+
             <!-- biriyani section start  -->
-            <section>
+            <section id="biriyani">
                 <div class="text-white font-bold text-4xl mt-20 pl-52">
                     Biriyani
                 </div>
@@ -144,10 +155,11 @@
                                 Rich mutton kacchi biryani prepared with tender mutton & aromatic rice
                             </p>
                         </div>
-                        <div class="w-48 h-28 rounded-xl overflow-hidden m-4">
+                        <div class="w-44 h-32 rounded-xl overflow-hidden m-4">
                             <img src="images/mutton kacchi biriyani.jpg" class="w-full h-full object-cover" alt="" />
                         </div>
                     </div>
+
                     <!-- chicken biriyani -->
                     <div class="card card-side bg-base-100 shadow-md w-1/3  ">
                         <div class="card-body p-4">
@@ -157,7 +169,7 @@
                                 Aromatic chicken biriyani prepared with tender chicken & fragrant rice
                             </p>
                         </div>
-                        <div class="w-48 h-28 rounded-xl overflow-hidden m-4">
+                        <div class="w-44 h-32 rounded-xl overflow-hidden m-4">
                             <img src="images/chicken biriyani.jpg" class="w-full h-full object-cover" alt="" />
                         </div>
                     </div>
@@ -167,7 +179,7 @@
             <!-- biriyani section ends -->
 
             <!-- rice section starts -->
-            <section>
+            <section id="rice">
                 <div class="text-white font-bold text-4xl mt-20 pl-52">
                     Rice
                 </div>
@@ -178,26 +190,26 @@
                     <!--plain rice -->
                     <div class="card card-side bg-base-100 shadow-md w-1/3">
                         <div class="card-body p-4">
-                            <h2 class="card-title text-xl">Mutton Kacchi Biryani</h2>
-                            <p class="text-lg text-black font-bold">Tk 270</p>
+                            <h2 class="card-title text-xl">Plain Rice</h2>
+                            <p class="text-lg text-black font-bold">Tk 80</p>
                             <p class="text-lg text-black">
-                                Rich mutton kacchi biryani prepared with tender mutton & aromatic rice
+                                1:1 - prepared with Kataribhog rice
                             </p>
                         </div>
-                        <div class="w-48 h-28 rounded-xl overflow-hidden m-4">
+                        <div class="w-44 h-32 rounded-xl overflow-hidden m-4">
                             <img src="images/Basmati rice.jpg" class="w-full h-full object-cover" alt="" />
                         </div>
                     </div>
                     <!-- Pulao -->
                     <div class="card card-side bg-base-100 shadow-md w-1/3  ">
                         <div class="card-body p-4">
-                            <h2 class="card-title text-xl">Chicken Biryani</h2>
-                            <p class="text-lg text-black font-bold">Tk 250</p>
+                            <h2 class="card-title text-xl">Plain Polao</h2>
+                            <p class="text-lg text-black font-bold">Tk 150</p>
                             <p class="text-lg text-black">
-                                Aromatic chicken biriyani prepared with tender chicken & fragrant rice
+                                1:1 - prepared with rice tossed in ghee & spices
                             </p>
                         </div>
-                        <div class="w-48 h-28 rounded-xl overflow-hidden m-4">
+                        <div class="w-44 h-32 rounded-xl overflow-hidden m-4">
                             <img src="images/pulao.jpg" class="w-full h-full object-cover" alt="" />
                         </div>
                     </div>
@@ -207,26 +219,26 @@
                     <!--panta bhat -->
                     <div class="card card-side bg-base-100 shadow-md w-1/3">
                         <div class="card-body p-4">
-                            <h2 class="card-title text-xl">Mutton Kacchi Biryani</h2>
-                            <p class="text-lg text-black font-bold">Tk 270</p>
+                            <h2 class="card-title text-xl">Panta Bhat</h2>
+                            <p class="text-lg text-black font-bold">Tk 100</p>
                             <p class="text-lg text-black">
-                                Rich mutton kacchi biryani prepared with tender mutton & aromatic rice
+                                1:1 - panta bhat crafted with naturally fermented rice for a refreshing taste.
                             </p>
                         </div>
-                        <div class="w-48 h-28 rounded-xl overflow-hidden m-4">
+                        <div class="w-44 h-32 rounded-xl overflow-hidden m-4">
                             <img src="images/panta bhaat.jpg" class="w-full h-full object-cover" alt="" />
                         </div>
                     </div>
                     <!-- khichuri-->
                     <div class="card card-side bg-base-100 shadow-md w-1/3  ">
                         <div class="card-body p-4">
-                            <h2 class="card-title text-xl">Chicken Biryani</h2>
-                            <p class="text-lg text-black font-bold">Tk 250</p>
+                            <h2 class="card-title text-xl">Khichuri</h2>
+                            <p class="text-lg text-black font-bold">Tk 230</p>
                             <p class="text-lg text-black">
-                                Aromatic chicken biriyani prepared with tender chicken & fragrant rice
+                                1:1 - khichuri prepared with fragrant rice,& aromatic spices
                             </p>
                         </div>
-                        <div class="w-48 h-28 rounded-xl overflow-hidden m-4">
+                        <div class="w-44 h-32 rounded-xl overflow-hidden m-4">
                             <img src="images/khichuri.jpg" class="w-full h-full object-cover" alt="" />
                         </div>
                     </div>
@@ -234,14 +246,330 @@
 
             </section>
             <!-- rice section ends -->
+
+            <!-- fish section start  -->
+            <section id="fish">
+                <div class="text-white font-bold text-4xl mt-20 pl-52">
+                    Fish
+                </div>
+            </section>
+            <section class="grid">
+                <div class="flex flex-row gap-28 mt-12 ml-52">
+                    <!-- ilish mach -->
+                    <div class="card card-side bg-base-100 shadow-md w-1/3  ">
+                        <div class="card-body p-4">
+                            <h2 class="card-title text-xl">Ilish Fish</h2>
+                            <p class="text-lg text-black font-bold">Tk 550</p>
+                            <p class="text-lg text-black">
+                                Deshi delicacy prepared with Ilish Fish,herbs and spices
+                            </p>
+                        </div>
+                        <div class="w-44 h-32 rounded-xl overflow-hidden m-4">
+                            <img src="images/ilish.jpg" class="w-full h-full object-cover" alt="" />
+                        </div>
+                    </div>
+                    <!-- rupchanda fry -->
+                    <div class="card card-side bg-base-100 shadow-md w-1/3">
+                        <div class="card-body p-4">
+                            <h2 class="card-title text-xl">Rupchanda Fry</h2>
+                            <p class="text-lg text-black font-bold">Tk 900</p>
+                            <p class="text-lg text-black">
+                                Bengali styled fried Rupchanda fish,crispy on the outside
+                            </p>
+                        </div>
+                        <div class="w-44 h-32 rounded-xl overflow-hidden m-4">
+                            <img src="images/rupchanda fry.jpg" class="w-full h-full object-cover" alt="" />
+                        </div>
+                    </div>
+
+                </div>
+                <div class="flex flex-row gap-28 mt-12 ml-52">
+                    <!-- fish fry -->
+                    <div class="card card-side bg-base-100 shadow-md w-1/3  ">
+                        <div class="card-body p-4">
+                            <h2 class="card-title text-xl">Fish Fry</h2>
+                            <p class="text-lg text-black font-bold">Tk 150</p>
+                            <p class="text-lg text-black">
+                                Bengali styled fried fish,crispy and crunchy on the outside
+                            </p>
+                        </div>
+                        <div class="w-44 h-32 rounded-xl overflow-hidden m-4">
+                            <img src="images/fish fry.jpg" class="w-full h-full object-cover" alt="" />
+                        </div>
+                    </div>
+                    <!-- chingri bhapa -->
+                    <div class="card card-side bg-base-100 shadow-md w-1/3  ">
+                        <div class="card-body p-4">
+                            <h2 class="card-title text-xl">Chingri Bhapa</h2>
+                            <p class="text-lg text-black font-bold">Tk 350</p>
+                            <p class="text-lg text-black">
+                                Prawns with onion,ginger & garlic tomato and freshly grounded
+                            </p>
+                        </div>
+                        <div class="w-44 h-32 rounded-xl overflow-hidden m-4">
+                            <img src="images/chingri bhapa.jpg" class="w-full h-full object-cover" alt="" />
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- fish section ends  -->
+
+            <!-- bhorta section start  -->
+            <section id="bhorta">
+                <div class="text-white font-bold text-4xl mt-20 pl-52">
+                    Bhorta
+                </div>
+            </section>
+            <section class="grid">
+                <div class="flex flex-row gap-28 mt-12 ml-52">
+                    <!-- Aloo Bhorta -->
+                    <div class="card card-side bg-base-100 shadow-md w-1/3  ">
+                        <div class="card-body p-4">
+                            <h2 class="card-title text-xl">Alu Bhorta</h2>
+                            <p class="text-lg text-black font-bold">Tk 40</p>
+                            <p class="text-lg text-black">
+                                1:1 - Mashed dish of onion,chili,seasoning and potato.
+                            </p>
+                        </div>
+                        <div class="w-44 h-32 rounded-xl overflow-hidden m-4">
+                            <img src="images/Alo Bhorta.jpg" class="w-full h-full object-cover" alt="" />
+                        </div>
+                    </div>
+                    <!-- Begun Bhorta -->
+                    <div class="card card-side bg-base-100 shadow-md w-1/3">
+                        <div class="card-body p-4">
+                            <h2 class="card-title text-xl">Begun Bhorta</h2>
+                            <p class="text-lg text-black font-bold">Tk 70</p>
+                            <p class="text-lg text-black">
+                                1:1 - Mashed dish of brinjal,onions and chilis
+                            </p>
+                        </div>
+                        <div class="w-44 h-32 rounded-xl overflow-hidden m-4">
+                            <img src="images/Begun Bhorta.jpg" class="w-full h-full object-cover" alt="" />
+                        </div>
+                    </div>
+
+                </div>
+                <div class="flex flex-row gap-28 mt-12 ml-52">
+                    <!-- Tomato Bhorta -->
+                    <div class="card card-side bg-base-100 shadow-md w-1/3  ">
+                        <div class="card-body p-4">
+                            <h2 class="card-title text-xl">Tomato Bhorta</h2>
+                            <p class="text-lg text-black font-bold">Tk 60</p>
+                            <p class="text-lg text-black">
+                                A mashed tomato dish,seasoned with spices,onions & green chili
+                            </p>
+                        </div>
+                        <div class="w-44 h-32 rounded-xl overflow-hidden m-4">
+                            <img src="images/Tomato Bhorta.jpg" class="w-full h-full object-cover" alt="" />
+                        </div>
+                    </div>
+                    <!--Daal -->
+                    <div class="card card-side bg-base-100 shadow-md w-1/3  ">
+                        <div class="card-body p-4">
+                            <h2 class="card-title text-xl">Daal</h2>
+                            <p class="text-lg text-black font-bold">Tk 40</p>
+                            <p class="text-lg text-black">
+                                1:1 - comfort food that tastes like a hug from within
+                            </p>
+                        </div>
+                        <div class="w-44 h-32 rounded-xl overflow-hidden m-4">
+                            <img src="images/Daal.jpg" class="w-full h-full object-cover" alt="" />
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- fish section ends  -->
+
+            <!-- bevarage section starts  -->
+            <section id="beverage">
+                <div class="text-white font-bold text-4xl mt-20 pl-52">
+                    Beverage
+                </div>
+            </section>
+            <section class="grid">
+                <!-- cold coffee  -->
+                <div class="flex flex-row gap-28 mt-12 ml-52">
+                    <div class="card card-side bg-base-100 shadow-md w-1/3  ">
+                        <div class="card-body p-4">
+                            <h2 class="card-title text-xl">Cold Coffee</h2>
+                            <p class="text-lg text-black font-bold">Tk 250</p>
+                            <p class="text-lg text-black">
+                                1:1 - Refreshing chilled coffee beverage
+                            </p>
+                        </div>
+                        <div class="w-44 h-32 rounded-xl overflow-hidden m-4">
+                            <img src="images/cold coffee.jpg" class="w-full h-full object-cover" alt="" />
+                        </div>
+                    </div>
+                    <!-- malai cha  -->
+                    <div class="card card-side bg-base-100 shadow-md w-1/3  ">
+                        <div class="card-body p-4">
+                            <h2 class="card-title text-xl">Malai Cha</h2>
+                            <p class="text-lg text-black font-bold">Tk 30</p>
+                            <p class="text-lg text-black">
+                                prepared with milk,tea leaves,and malai
+                            </p>
+                        </div>
+                        <div class="w-44 h-32 rounded-xl overflow-hidden m-4">
+                            <img src="images/Cha.jpg" class="w-full h-full object-cover" alt="" />
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex flex-row gap-28 mt-12 ml-52">
+                    <!-- orange juice  -->
+                    <div class="card card-side bg-base-100 shadow-md w-1/3  ">
+                        <div class="card-body p-4">
+                            <h2 class="card-title text-xl">Orange Juice</h2>
+                            <p class="text-lg text-black font-bold">Tk 200</p>
+                            <p class="text-lg text-black">
+                                Fresh drink prepared with orange,sugar and touch of ice
+                            </p>
+                        </div>
+                        <div class="w-44 h-32 rounded-xl overflow-hidden m-4">
+                            <img src="images/orange juice.jpg" class="w-full h-full object-cover" alt="" />
+                        </div>
+                    </div>
+                    <!-- Lemon juice  -->
+                    <div class="card card-side bg-base-100 shadow-md w-1/3  ">
+                        <div class="card-body p-4">
+                            <h2 class="card-title text-xl">Lemon Juice</h2>
+                            <p class="text-lg text-black font-bold">Tk 150</p>
+                            <p class="text-lg text-black">
+                                Refreshing drink prepared with lemon,sugar and chilled water
+                            </p>
+                        </div>
+                        <div class="w-44 h-32 rounded-xl overflow-hidden m-4">
+                            <img src="images/lemon juice.jpg" class="w-full h-full object-cover" alt="" />
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- bevarage section ends -->
+
+            <!-- Dessert section starts -->
+            <section id="dessert">
+                <div class="text-white font-bold text-4xl mt-20 pl-52">
+                    Dessert
+                </div>
+            </section>
+            <section>
+                <div class="flex flex-row gap-28 mt-12 ml-52">
+                    <!-- faluda -->
+                    <div class="card card-side bg-base-100 shadow-md w-1/3  ">
+                        <div class="card-body p-4">
+                            <h2 class="card-title text-xl">Faluda</h2>
+                            <p class="text-lg text-black font-bold">Tk 300</p>
+                            <p class="text-lg text-black">
+                                prepared with mixed rose syrup,sweet basil seeds,milk and Ice-Cream
+                            </p>
+                        </div>
+                        <div class="w-44 h-32 rounded-xl overflow-hidden m-4">
+                            <img src="images/Faluda.jpg" class="w-full h-full object-cover" alt="" />
+                        </div>
+                    </div>
+                    <!-- Roshmalai -->
+                    <div class="card card-side bg-base-100 shadow-md w-1/3  ">
+                        <div class="card-body p-4">
+                            <h2 class="card-title text-xl">Roshmalai</h2>
+                            <p class="text-lg text-black font-bold">Tk 250</p>
+                            <p class="text-lg text-black">
+                                prepared with chana,sugar,cardamom and milk
+                            </p>
+                        </div>
+                        <div class="w-44 h-32 rounded-xl overflow-hidden m-4">
+                            <img src="images/Roshmalai.jpg" class="w-full h-full object-cover" alt="" />
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex flex-row gap-28 mt-12 ml-52">
+                    <!-- doi  -->
+
+                    <div class="card card-side bg-base-100 shadow-md w-1/3  ">
+                        <div class="card-body p-4">
+                            <h2 class="card-title text-xl">Doi</h2>
+                            <p class="text-lg text-black font-bold">Tk 250</p>
+                            <p class="text-lg text-black">
+                                A thick and creamy dairy product made by farmenting milk
+                            </p>
+                        </div>
+                        <div class="w-44 h-32 rounded-xl overflow-hidden m-4">
+                            <img src="images/Doi.jpg" class="w-full h-full object-cover" alt="" />
+                        </div>
+                    </div>
+                    <!-- ice cream  -->
+                    <div class="card card-side bg-base-100 shadow-md w-1/3  ">
+                        <div class="card-body p-4">
+                            <h2 class="card-title text-xl">Ice-Cream</h2>
+                            <p class="text-lg text-black font-bold">Tk 250</p>
+                            <p class="text-lg text-black">
+                                Freshly prepared chocolate flavoured ice cream
+                            </p>
+                        </div>
+                        <div class="w-44 h-32 rounded-xl overflow-hidden m-4">
+                            <img src="images/Ice Cream.jpg" class="w-full h-full object-cover" alt="" />
+                        </div>
+                    </div>
+                </div>
+            </section>
         </section>
+        <!-- Dessert section ends -->
+
 
     </main>
-
-    <footer>
-
-
+    <!-- footer starts -->
+    <footer id="footer-section" class="mt-16 ml-56 hidden">
+        <div class="footer sm:footer-horizontal text-white p-10">
+            <nav>
+                <h6 class="footer-title text-2xl">Services</h6>
+                <a class="link link-hover text-xl">Branding</a>
+                <a class="link link-hover text-xl">Design</a>
+                <a class="link link-hover text-xl">Marketing</a>
+                <a class="link link-hover text-xl">Advertisement</a>
+            </nav>
+            <nav>
+                <h6 class="footer-title text-2xl">Company</h6>
+                <a class="link link-hover text-xl">About us</a>
+                <a class="link link-hover text-xl">Contact</a>
+                <a class="link link-hover text-xl">Jobs</a>
+                <a class="link link-hover text-xl">Press kit</a>
+            </nav>
+            <nav>
+                <h6 class="footer-title text-2xl">Social</h6>
+                <div class="grid grid-flow-col gap-4">
+                    <a>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                            class="fill-current">
+                            <path
+                                d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z">
+                            </path>
+                        </svg>
+                    </a>
+                    <a>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                            class="fill-current">
+                            <path
+                                d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z">
+                            </path>
+                        </svg>
+                    </a>
+                    <a>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                            class="fill-current">
+                            <path
+                                d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z">
+                            </path>
+                        </svg>
+                    </a>
+                </div>
+            </nav>
+        </div>
     </footer>
+    <!-- footer ends  -->
+
+   <script src="scripts/bdmenu.js"></script>
 </body>
 
 </html>
