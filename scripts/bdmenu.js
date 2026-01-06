@@ -13,4 +13,13 @@ function bangladeshiMenu() {
   showElementById("roaming-header");
   showElementById("bangladeshi-header");
   showElementById("bd-menu");
+  showElementById("footer-section");
+}
+
+function homeButton(){
+  hideElementById("roaming-header");
+  hideElementById("bangladeshi-header");
+  hideElementById("bd-menu");
+  hideElementById("footer-section");
+  showElementById("home-section");
 }
