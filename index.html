@@ -35,7 +35,7 @@
                             class="menu menu-sm dropdown-content rounded-box z-1 mt-3 w-52 p-2 shadow text-white">
                             <li class="text-white font-bold"><a>Home</a></li>
                             <li onclick="bangladeshiMenu()" class="text-white font-bold"><a>Bangladeshi</a></li>
-                            <li class="text-white font-bold"><a>Pan-asian</a></li>
+                            <li onclick="panAsianMenu()" class="text-white font-bold"><a>Pan-asian</a></li>
                             <li class="text-white font-bold"><a>Italian</a></li>
                             <li class="text-white font-bold"><a>American</a></li>
                             <li class="text-white font-bold"><a>Chinese</a></li>
@@ -48,7 +48,7 @@
                     <ul class="menu menu-horizontal px-1">
                         <li class="text-white text-2xl font-bold"><a>Home</a></li>
                         <li onclick="bangladeshiMenu()" class="text-white text-2xl font-bold"><a>Bangladeshi</a></li>
-                        <li class="text-white text-2xl font-bold"><a>Pan-asian</a></li>
+                        <li onclick="panAsianMenu()" class="text-white text-2xl font-bold"><a>Pan-asian</a></li>
                         <li class="text-white text-2xl font-bold"><a>Italian</a></li>
                         <li class="text-white text-2xl font-bold"><a>American</a></li>
                         <li class="text-white text-2xl font-bold"><a>Chinese</a></li>
@@ -97,7 +97,7 @@
                             </div>
                             <ul tabindex="-1"
                                 class="menu menu-sm dropdown-content rounded-box z-1 mt-3 w-52 p-2 shadow text-white">
-                                <li onclick="homeButton()" class="text-white font-bold"><a>Home</a></li>
+                                <li onclick="bdToHomeButton()" class="text-white font-bold"><a>Home</a></li>
                                 <li class="text-white font-bold"><a>Bangladeshi</a></li>
                                 <li class="text-white font-bold"><a>Pan-asian</a></li>
                                 <li class="text-white font-bold"><a>Italian</a></li>
@@ -110,7 +110,7 @@
                     </div>
                     <div class="navbar-center hidden lg:flex ml-48">
                         <ul class="menu menu-horizontal px-1">
-                            <li onclick="homeButton()" class="text-white text-2xl font-bold"><a>Home</a></li>
+                            <li onclick="bdToHomeButton()" class="text-white text-2xl font-bold"><a>Home</a></li>
                             <li class="text-white text-2xl font-bold"><a>Bangladeshi</a></li>
                             <li class="text-white text-2xl font-bold"><a>Pan-asian</a></li>
                             <li class="text-white text-2xl font-bold"><a>Italian</a></li>
@@ -558,7 +558,7 @@
             </div>
         </header>
         <!-- pan asian menu  -->
-        <section>
+        <section id="">
 
             <!-- starter section starts -->
             <section>
@@ -778,7 +778,7 @@
 
             <!-- main section starts  -->
 
-             <section>
+            <section>
                 <div class="text-white font-bold text-4xl mt-20 pl-52">
                     Main
                 </div>
@@ -786,136 +786,155 @@
 
             <section class="mt-12 ml-52 space-y-8">
                 <div class="flex flex-row gap-28">
-                    <!-- egg rice-->
+                    <!-- Sweet sour chicken-->
                     <div class="card card-side bg-base-100 shadow-md w-1/3 bg-gradient-to-r from-cyan-900 to-cyan-500 ">
                         <div class="card-body p-4 text-white">
-                            <h2 class="card-title text-xl">Egg Rice</h2>
+                            <h2 class="card-title text-xl">Sweet Sour Chicken</h2>
                             <p class="text-lg  font-bold">Tk 270</p>
                             <p class="text-lg ">
                                 Rich mutton kacchi biryani prepared with tender mutton & aromatic rice
                             </p>
                         </div>
                         <div class="w-44 h-32 rounded-xl overflow-hidden m-4">
-                            <img src="images/pan asian menu/egg rice.jpg" class="w-full h-full object-cover" alt="" />
+                            <img src="images/pan asian menu/Sweet sour chicken.jpg" class="w-full h-full object-cover"
+                                alt="" />
                         </div>
                     </div>
 
-                    <!-- steamed rice-->
+                    <!-- teriyaki chicken-->
                     <div class="card card-side bg-base-100 shadow-md w-1/3 bg-gradient-to-r from-cyan-700 to-cyan-500 ">
                         <div class="card-body p-4 text-white">
-                            <h2 class="card-title text-xl">Steamed Rice</h2>
+                            <h2 class="card-title text-xl">Teriyaki Chicken</h2>
                             <p class="text-lg  font-bold">Tk 270</p>
                             <p class="text-lg ">
                                 Rich mutton kacchi biryani prepared with tender mutton & aromatic rice
                             </p>
                         </div>
                         <div class="w-44 h-32 rounded-xl overflow-hidden m-4">
-                            <img src="images/pan asian menu/steamed rice.jpg" class="w-full h-full object-cover"
+                            <img src="images/pan asian menu/teriyaki chicken.jpg" class="w-full h-full object-cover"
                                 alt="" />
                         </div>
                     </div>
                 </div>
                 <div class="flex flex-row gap-28 ">
-                    <!-- Sea food rice -->
+                    <!-- korean fried chicken-->
                     <div class="card card-side bg-base-100 shadow-md w-1/3 bg-gradient-to-r from-cyan-900 to-cyan-500 ">
                         <div class="card-body p-4 text-white">
-                            <h2 class="card-title text-xl">Sea-food Rice</h2>
+                            <h2 class="card-title text-xl">Korean Fried Chicken</h2>
                             <p class="text-lg  font-bold">Tk 270</p>
                             <p class="text-lg ">
                                 Rich mutton kacchi biryani prepared with tender mutton & aromatic rice
                             </p>
                         </div>
                         <div class="w-44 h-32 rounded-xl overflow-hidden m-4">
-                            <img src="images/pan asian menu/seafood rice.jpg" class="w-full h-full object-cover"
+                            <img src="images/pan asian menu/korean fried chicken.jpg" class="w-full h-full object-cover"
                                 alt="" />
                         </div>
                     </div>
 
-                    <!-- Thai Chicken rice-->
+                    <!-- beef bulgogi-->
                     <div class="card card-side bg-base-100 shadow-md w-1/3 bg-gradient-to-r from-cyan-700 to-cyan-500 ">
                         <div class="card-body p-4 text-white">
-                            <h2 class="card-title text-xl">Thai Chicken Rice</h2>
+                            <h2 class="card-title text-xl">Beef Bulgogi</h2>
                             <p class="text-lg  font-bold">Tk 270</p>
                             <p class="text-lg ">
                                 Rich mutton kacchi biryani prepared with tender mutton & aromatic rice
                             </p>
                         </div>
                         <div class="w-44 h-32 rounded-xl overflow-hidden m-4">
-                            <img src="images/pan asian menu/thai chicken rice.jpg" class="w-full h-full object-cover"
+                            <img src="images/pan asian menu/beef bulgogi.jpg" class="w-full h-full object-cover"
+                                alt="" />
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex flex-row gap-28 ">
+                    <!-- chicken katsu-->
+                    <div class="card card-side bg-base-100 shadow-md w-1/3 bg-gradient-to-r from-cyan-900 to-cyan-500 ">
+                        <div class="card-body p-4 text-white">
+                            <h2 class="card-title text-xl">Chicken Katsu</h2>
+                            <p class="text-lg  font-bold">Tk 270</p>
+                            <p class="text-lg ">
+                                Rich mutton kacchi biryani prepared with tender mutton & aromatic rice
+                            </p>
+                        </div>
+                        <div class="w-44 h-32 rounded-xl overflow-hidden m-4">
+                            <img src="images/pan asian menu/chicken katsu.jpg" class="w-full h-full object-cover"
+                                alt="" />
+                        </div>
+                    </div>
+
+                    <!-- black pepper chicken-->
+                    <div class="card card-side bg-base-100 shadow-md w-1/3 bg-gradient-to-r from-cyan-700 to-cyan-500 ">
+                        <div class="card-body p-4 text-white">
+                            <h2 class="card-title text-xl">Black Pepper Chicken</h2>
+                            <p class="text-lg  font-bold">Tk 270</p>
+                            <p class="text-lg ">
+                                Rich mutton kacchi biryani prepared with tender mutton & aromatic rice
+                            </p>
+                        </div>
+                        <div class="w-44 h-32 rounded-xl overflow-hidden m-4">
+                            <img src="images/pan asian menu/black pepper chicken.jpg" class="w-full h-full object-cover"
                                 alt="" />
                         </div>
                     </div>
                 </div>
             </section>
- 
+
             <!-- main section ends  -->
 
             <!-- soup section starts  -->
 
-             <section>
+            <section>
                 <div class="text-white font-bold text-4xl mt-20 pl-52">
-                    Rice
+                    Soup
                 </div>
             </section>
 
             <section class="mt-12 ml-52 space-y-8">
                 <div class="flex flex-row gap-28">
-                    <!-- egg rice-->
+                    <!-- tom yum soup-->
                     <div class="card card-side bg-base-100 shadow-md w-1/3 bg-gradient-to-r from-cyan-900 to-cyan-500 ">
                         <div class="card-body p-4 text-white">
-                            <h2 class="card-title text-xl">Egg Rice</h2>
+                            <h2 class="card-title text-xl">Tom Yum Soup</h2>
                             <p class="text-lg  font-bold">Tk 270</p>
                             <p class="text-lg ">
                                 Rich mutton kacchi biryani prepared with tender mutton & aromatic rice
                             </p>
                         </div>
                         <div class="w-44 h-32 rounded-xl overflow-hidden m-4">
-                            <img src="images/pan asian menu/egg rice.jpg" class="w-full h-full object-cover" alt="" />
+                            <img src="images/pan asian menu/tom yum soup.jpg" class="w-full h-full object-cover"
+                                alt="" />
                         </div>
                     </div>
 
-                    <!-- steamed rice-->
+                    <!-- hot sour soup-->
                     <div class="card card-side bg-base-100 shadow-md w-1/3 bg-gradient-to-r from-cyan-700 to-cyan-500 ">
                         <div class="card-body p-4 text-white">
-                            <h2 class="card-title text-xl">Steamed Rice</h2>
+                            <h2 class="card-title text-xl">Hot Sour Soup</h2>
                             <p class="text-lg  font-bold">Tk 270</p>
                             <p class="text-lg ">
                                 Rich mutton kacchi biryani prepared with tender mutton & aromatic rice
                             </p>
                         </div>
                         <div class="w-44 h-32 rounded-xl overflow-hidden m-4">
-                            <img src="images/pan asian menu/steamed rice.jpg" class="w-full h-full object-cover"
+                            <img src="images/pan asian menu/hot sour soup.jpg" class="w-full h-full object-cover"
                                 alt="" />
                         </div>
                     </div>
                 </div>
                 <div class="flex flex-row gap-28 ">
-                    <!-- Sea food rice -->
+                    <!-- mushroom soup-->
                     <div class="card card-side bg-base-100 shadow-md w-1/3 bg-gradient-to-r from-cyan-900 to-cyan-500 ">
                         <div class="card-body p-4 text-white">
-                            <h2 class="card-title text-xl">Sea-food Rice</h2>
+                            <h2 class="card-title text-xl">Mushroom soup</h2>
                             <p class="text-lg  font-bold">Tk 270</p>
                             <p class="text-lg ">
                                 Rich mutton kacchi biryani prepared with tender mutton & aromatic rice
                             </p>
                         </div>
                         <div class="w-44 h-32 rounded-xl overflow-hidden m-4">
-                            <img src="images/pan asian menu/seafood rice.jpg" class="w-full h-full object-cover"
-                                alt="" />
-                        </div>
-                    </div>
-
-                    <!-- Thai Chicken rice-->
-                    <div class="card card-side bg-base-100 shadow-md w-1/3 bg-gradient-to-r from-cyan-700 to-cyan-500 ">
-                        <div class="card-body p-4 text-white">
-                            <h2 class="card-title text-xl">Thai Chicken Rice</h2>
-                            <p class="text-lg  font-bold">Tk 270</p>
-                            <p class="text-lg ">
-                                Rich mutton kacchi biryani prepared with tender mutton & aromatic rice
-                            </p>
-                        </div>
-                        <div class="w-44 h-32 rounded-xl overflow-hidden m-4">
-                            <img src="images/pan asian menu/thai chicken rice.jpg" class="w-full h-full object-cover"
+                            <img src="images/pan asian menu/mushroom soup.jpg" class="w-full h-full object-cover"
                                 alt="" />
                         </div>
                     </div>
@@ -927,70 +946,70 @@
 
             <!-- dessert section starts -->
 
-             <section>
+            <section>
                 <div class="text-white font-bold text-4xl mt-20 pl-52">
-                    Rice
+                    Dessert 
                 </div>
             </section>
 
             <section class="mt-12 ml-52 space-y-8">
                 <div class="flex flex-row gap-28">
-                    <!-- egg rice-->
+                    <!-- fried banana-->
                     <div class="card card-side bg-base-100 shadow-md w-1/3 bg-gradient-to-r from-cyan-900 to-cyan-500 ">
                         <div class="card-body p-4 text-white">
-                            <h2 class="card-title text-xl">Egg Rice</h2>
+                            <h2 class="card-title text-xl">Fried Banana</h2>
                             <p class="text-lg  font-bold">Tk 270</p>
                             <p class="text-lg ">
                                 Rich mutton kacchi biryani prepared with tender mutton & aromatic rice
                             </p>
                         </div>
                         <div class="w-44 h-32 rounded-xl overflow-hidden m-4">
-                            <img src="images/pan asian menu/egg rice.jpg" class="w-full h-full object-cover" alt="" />
+                            <img src="images/pan asian menu/fried banana.jpg" class="w-full h-full object-cover" alt="" />
                         </div>
                     </div>
 
-                    <!-- steamed rice-->
+                    <!-- coconut pudding-->
                     <div class="card card-side bg-base-100 shadow-md w-1/3 bg-gradient-to-r from-cyan-700 to-cyan-500 ">
                         <div class="card-body p-4 text-white">
-                            <h2 class="card-title text-xl">Steamed Rice</h2>
+                            <h2 class="card-title text-xl">Coconut Pudding</h2>
                             <p class="text-lg  font-bold">Tk 270</p>
                             <p class="text-lg ">
                                 Rich mutton kacchi biryani prepared with tender mutton & aromatic rice
                             </p>
                         </div>
                         <div class="w-44 h-32 rounded-xl overflow-hidden m-4">
-                            <img src="images/pan asian menu/steamed rice.jpg" class="w-full h-full object-cover"
+                            <img src="images/pan asian menu/coconut pudding.jpg" class="w-full h-full object-cover"
                                 alt="" />
                         </div>
                     </div>
                 </div>
                 <div class="flex flex-row gap-28 ">
-                    <!-- Sea food rice -->
+                    <!-- mango sticky rice -->
                     <div class="card card-side bg-base-100 shadow-md w-1/3 bg-gradient-to-r from-cyan-900 to-cyan-500 ">
                         <div class="card-body p-4 text-white">
-                            <h2 class="card-title text-xl">Sea-food Rice</h2>
+                            <h2 class="card-title text-xl">Mango Sticky Rice</h2>
                             <p class="text-lg  font-bold">Tk 270</p>
                             <p class="text-lg ">
                                 Rich mutton kacchi biryani prepared with tender mutton & aromatic rice
                             </p>
                         </div>
                         <div class="w-44 h-32 rounded-xl overflow-hidden m-4">
-                            <img src="images/pan asian menu/seafood rice.jpg" class="w-full h-full object-cover"
+                            <img src="images/pan asian menu/mango sticky rice.jpg" class="w-full h-full object-cover"
                                 alt="" />
                         </div>
                     </div>
 
-                    <!-- Thai Chicken rice-->
+                    <!-- chocolet fudge brownie-->
                     <div class="card card-side bg-base-100 shadow-md w-1/3 bg-gradient-to-r from-cyan-700 to-cyan-500 ">
                         <div class="card-body p-4 text-white">
-                            <h2 class="card-title text-xl">Thai Chicken Rice</h2>
+                            <h2 class="card-title text-xl">Chocolet Fudge Brownie</h2>
                             <p class="text-lg  font-bold">Tk 270</p>
                             <p class="text-lg ">
                                 Rich mutton kacchi biryani prepared with tender mutton & aromatic rice
                             </p>
                         </div>
                         <div class="w-44 h-32 rounded-xl overflow-hidden m-4">
-                            <img src="images/pan asian menu/thai chicken rice.jpg" class="w-full h-full object-cover"
+                            <img src="images/pan asian menu/chocolate fudge brownie.jpg" class="w-full h-full object-cover"
                                 alt="" />
                         </div>
                     </div>

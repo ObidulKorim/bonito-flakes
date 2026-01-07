@@ -16,10 +16,18 @@ function bangladeshiMenu() {
   showElementById("footer-section");
 }
 
-function homeButton(){
+function bdToHomeButton() {
   hideElementById("roaming-header");
   hideElementById("bangladeshi-header");
   hideElementById("bd-menu");
   hideElementById("footer-section");
   showElementById("home-section");
+  
 }
+
+function panAsianMenu() {
+  hideElementById("home-section");
+  showElementById("roaming-header");
+  showElementById("footer-section");
+}
+
