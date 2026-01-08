@@ -22,12 +22,5 @@ function bdToHomeButton() {
   hideElementById("bd-menu");
   hideElementById("footer-section");
   showElementById("home-section");
-  
-}
-
-function panAsianMenu() {
-  hideElementById("home-section");
-  showElementById("roaming-header");
-  showElementById("footer-section");
 }
 

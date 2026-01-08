@@ -47,7 +47,7 @@
                 <div class="navbar-center hidden lg:flex ml-48">
                     <ul class="menu menu-horizontal px-1">
                         <li class="text-white text-2xl font-bold"><a>Home</a></li>
-                        <li onclick="bangladeshiMenu()" class="text-white text-2xl font-bold"><a>Bangladeshi</a></li>
+                        <li onclick="bangladeshiMenu(); panToBd();" class="text-white text-2xl font-bold"><a>Bangladeshi</a></li>
                         <li onclick="panAsianMenu()" class="text-white text-2xl font-bold"><a>Pan-asian</a></li>
                         <li class="text-white text-2xl font-bold"><a>Italian</a></li>
                         <li class="text-white text-2xl font-bold"><a>American</a></li>
@@ -97,7 +97,7 @@
                             </div>
                             <ul tabindex="-1"
                                 class="menu menu-sm dropdown-content rounded-box z-1 mt-3 w-52 p-2 shadow text-white">
-                                <li onclick="bdToHomeButton()" class="text-white font-bold"><a>Home</a></li>
+                                <li onclick="bdToHomeButton(); panToHomeButton();" class="text-white font-bold"><a>Home</a></li>
                                 <li class="text-white font-bold"><a>Bangladeshi</a></li>
                                 <li class="text-white font-bold"><a>Pan-asian</a></li>
                                 <li class="text-white font-bold"><a>Italian</a></li>
@@ -110,7 +110,7 @@
                     </div>
                     <div class="navbar-center hidden lg:flex ml-48">
                         <ul class="menu menu-horizontal px-1">
-                            <li onclick="bdToHomeButton()" class="text-white text-2xl font-bold"><a>Home</a></li>
+                            <li onclick="bdToHomeButton(); panToHomeButton();" class="text-white text-2xl font-bold"><a>Home</a></li>
                             <li class="text-white text-2xl font-bold"><a>Bangladeshi</a></li>
                             <li class="text-white text-2xl font-bold"><a>Pan-asian</a></li>
                             <li class="text-white text-2xl font-bold"><a>Italian</a></li>
@@ -545,7 +545,7 @@
 
         <!-- Pan Asian dishes starts from here  -->
 
-        <header id="bangladeshi-header" class="flex flex-col justify-center items-center mt-10 ">
+        <header id="panAsian-header" class="flex flex-col justify-center items-center mt-10 ">
             <div class="navbar-center hidden lg:flex">
                 <ul class="menu menu-horizontal px-1 border-b-3 border-yellow-400 gap-16">
                     <li class="text-white text-base font-bold"><a href="#biriyani">Starter(4)</a></li>
@@ -558,7 +558,8 @@
             </div>
         </header>
         <!-- pan asian menu  -->
-        <section id="">
+        <section id="panAsian-menu">
+
 
             <!-- starter section starts -->
             <section>
@@ -1076,6 +1077,7 @@
 
 
     <script src="scripts/bdmenu.js"></script>
+    <script src="scripts/panasianmenu.js"></script>
 </body>
 
 </html>
