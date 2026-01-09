@@ -21,6 +21,38 @@ function bdToHomeButton() {
   hideElementById("bangladeshi-header");
   hideElementById("bd-menu");
   hideElementById("footer-section");
-  showElementById("home-section");
+  
 }
 
+function panToHome(){
+  showElementById("home-section");
+  hideElementById("panAsian-header");
+  hideElementById("panAsian-menu");
+  hideElementById("roaming-header");
+}
+
+function panAsianMenu(){
+  hideElementById("home-section");
+  showElementById("roaming-header");
+  showElementById("panAsian-header");
+  showElementById("panAsian-menu");
+  showElementById("footer-section");
+}
+
+
+function bdToPan(){
+  showElementById("roaming-header");
+  showElementById("panAsian-header");
+  showElementById("panAsian-menu");
+  hideElementById("bangladeshi-header");
+  hideElementById("bd-menu");
+}
+
+function panToBd(){
+  hideElementById("panAsian-header");
+  hideElementById("panAsian-menu");
+  // hideElementById("");
+  showElementById("roaming-header");
+  showElementById("bangladeshi-header");
+  showElementById("bd-menu");
+}
