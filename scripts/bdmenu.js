@@ -51,8 +51,9 @@ function bdToPan(){
 function panToBd(){
   hideElementById("panAsian-header");
   hideElementById("panAsian-menu");
-  // hideElementById("");
   showElementById("roaming-header");
   showElementById("bangladeshi-header");
   showElementById("bd-menu");
 }
+
+function addToCart(){}
