@@ -56,8 +56,3 @@ function panToBd(){
   showElementById("bd-menu");
 }
 
-function addToCart(){
-  showElementById("my-drawer");
-}
-
-document.addEventListener("click", addToCart);

@@ -15,15 +15,17 @@
         html {
             scroll-behavior: smooth;
         }
+
+        
     </style>
 </head>
 
 <body class="bg-[url(images/websiteBg/restaurant.jpg)] w-full min-h-screen">
-    <header id="home-section" class="">
+    <header id="home-section" class="w-full min-h-screen">
         <section class="">
             <div class="navbar shadow-sm ">
                 <div class="navbar-start">
-                    <div class="dropdown">
+                    <div class="dropdown ">
                         <div tabindex="0" role="button" class="btn  lg:hidden">
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
                                 stroke="currentColor">
@@ -32,7 +34,7 @@
                             </svg>
                         </div>
                         <ul tabindex="-1"
-                            class="menu menu-sm dropdown-content rounded-box z-1 mt-3 w-52 p-2 shadow text-white">
+                            class="menu menu-sm dropdown-content rounded-box z-50  mt-3 w-36 p-2 shadow text-white">
                             <li onclick="" class="text-white font-bold"><a>Home</a></li>
                             <li onclick="bangladeshiMenu()" class="text-white font-bold"><a>Bangladeshi</a></li>
                             <li onclick="panAsianMenu()" class="text-white font-bold"><a>Pan-asian</a></li>
@@ -42,7 +44,7 @@
                             <li class="text-white font-bold"><a>Japanese</a></li>
                         </ul>
                     </div>
-                    <a class="btn btn-ghost text-3xl font-bold text-white ml-44">Bonito Flakes</a>
+                    <a class="btn btn-ghost text-2xl font-bold ml-8 text-white lg:ml-44">Bonito Flakes</a>
                 </div>
                 <div class="navbar-center hidden lg:flex mr-36">
                     <ul class="menu menu-horizontal px-1">
@@ -55,8 +57,8 @@
                         <li class="text-white text-2xl font-bold"><a>Japanese</a></li>
                     </ul>
                 </div>
-                <div class="navbar-end ">
-                    <div class="mr-80">
+                <div class=" navbar-end">
+                    <div class="md:mr-80">
                         <button class="btn bg-white text-black">
                             Contact Us
                         </button>
@@ -65,18 +67,18 @@
             </div>
             </div>
         </section>
-        <section id="main-header" class="mt-48 ml-48 flex gap-48 ">
+        <section id="main-header" class="mt-28 lg:mt-48 px-6 lg:px-48 flex flex-col lg:flex-row gap-10 lg:gap-48 ">
             <div>
                 <h4 class="text-white text-2xl font-bold">culinary odyssey</h4>
-                <h1 class="text-white text-8xl font-bold">EXPERIENCE THE <br>
+                <h1 class="text-white text-4xl lg:text-8xl font-bold">EXPERIENCE THE <br>
                     ART OF DINING</h1>
             </div>
-            <div class="flex gap-20">
+            <div class="grid grid-cols-2 lg:flex gap-20">
                 <div>
                     <img src="images/Home Images/Eren.png" alt="">
                     <img src="images/Home Images/Ichibei.png" alt="">
                 </div>
-                <div>
+                <div class="space-y-8">
                     <img src="images/Home Images/Asta.png" alt="">
                     <img src="images/Home Images/Ichigo.png" alt="">
                 </div>
