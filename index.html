@@ -95,7 +95,7 @@
                 <div class="navbar shadow-sm ">
                     <div class="navbar-start">
                         <div class="dropdown">
-                            <div tabindex="0" role="button" class="btn  lg:hidden">
+                            <div tabindex="0" role="button" class="btn btn-sm lg:btn-md lg:hidden">
                                 <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
                                     stroke="currentColor">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -103,7 +103,7 @@
                                 </svg>
                             </div>
                             <ul tabindex="-1"
-                                class="menu menu-sm dropdown-content rounded-box z-1 mt-3 w-52 p-2 shadow text-white">
+                                class="menu menu-sm dropdown-content rounded-box z-50 mt-3 lg:w-52 p-2 shadow text-white">
                                 <li onclick="bdToHomeButton(); panToHome();" class="text-white font-bold"><a>Home</a>
                                 </li>
                                 <li onclick=" panToBd()" class="text-white font-bold"><a>Bangladeshi</a></li>
@@ -114,9 +114,9 @@
                                 <li class="text-white font-bold"><a>Japanese</a></li>
                             </ul>
                         </div>
-                        <a class="btn btn-ghost text-3xl font-bold text-white ml-44">Bonito Flakes</a>
+                        <a class="btn btn-ghost  text-xl font-bold text-white ml-20 lg:ml-44">Bonito Flakes</a>
                     </div>
-                    <div class="navbar-center hidden lg:flex ml-48">
+                    <div class="navbar-center hidden lg:flex lg:ml-48">
                         <ul class="menu menu-horizontal px-1">
                             <li onclick="bdToHomeButton(); panToHome();" class="text-white text-2xl font-bold">
                                 <a>Home</a>
@@ -130,7 +130,7 @@
                         </ul>
                     </div>
 
-                    <div class="navbar-end ml-80">
+                    <div class="navbar-end ml-28 lg:ml-80">
                         <div class="drawer drawer-end">
                             <input id="my-drawer" type="checkbox" class="drawer-toggle" />
                             <div class="drawer-content">
@@ -147,7 +147,7 @@
                                     </div>
                                 </label>
                             </div>
-                            <div class="drawer-side ">
+                            <div class="drawer-side hidden">
                                 <label for="my-drawer" aria-label="close sidebar" class="drawer-overlay"></label>
                                 <ul class="menu bg-base-200 min-h-full w-1/4 pb-4 border-b border-gray-300">
                                     <!-- Sidebar content here -->
@@ -208,38 +208,37 @@
 
             <!-- biriyani section start  -->
             <section id="biriyani">
-                <div class="text-white font-bold text-4xl mt-20 pl-52">
+                <div class="text-white font-bold text-4xl mt-20 pl-6 md:pl-52 lg:pl-52">
                     Biriyani
                 </div>
             </section>
-            <section class="mt-12 ml-52">
-                <div class="flex flex-row gap-28">
+            <section class="">
+                <div class="flex flex-col lg:flex-row gap-28 mt-12">
                     <!-- mutton kacchi Biriyani -->
-                    <div class="card card-side bg-base-100 shadow-md w-1/3 bg-gradient-to-r from-cyan-900 to-cyan-500 ">
+                       <div class="card card-side bg-base-100 shadow-md w-full lg:w-1/3 bg-gradient-to-r from-cyan-700 to-cyan-500">
                         <div class="card-body p-4 text-white">
-                            <h2 class="card-title text-xl">Mutton Kacchi Biryani</h2>
+                            <h2 class="card-title text-xl">Mutton Kacchi Biriyani</h2>
                             <p class="text-lg  font-bold">Tk 270</p>
                             <p class="text-lg ">
                                 Rich mutton kacchi biryani prepared with tender mutton & aromatic rice
                             </p>
                         </div>
-                        <div class="w-44 h-32 rounded-xl overflow-hidden m-4">
-                            <img src="images/Bangladeshi Menu/mutton kacchi biriyani.jpg"
-                                class="w-full h-full object-cover" alt="" />
+                        <div class="w-full lg:w-48 h-48 lg:h-auto order-1 lg:order-2 p-4">
+                            <img src="images/Bangladeshi Menu/mutton kacchi biriyani.jpg" class="w-full h-full object-cover"
+                                alt="" />
                         </div>
                     </div>
 
                     <!-- chicken biriyani -->
-                    <div
-                        class="card card-side bg-base-100 shadow-md w-1/3  bg-gradient-to-r from-cyan-700 to-cyan-500 ">
+                       <div class="card card-side bg-base-100 shadow-md w-full lg:w-1/3 bg-gradient-to-r from-cyan-700 to-cyan-500">
                         <div class="card-body p-4 text-white">
-                            <h2 class="card-title text-xl">Chicken Biryani</h2>
-                            <p class="text-lg font-bold">Tk 250</p>
+                            <h2 class="card-title text-xl">Chicken Biriyani</h2>
+                            <p class="text-lg  font-bold">Tk 270</p>
                             <p class="text-lg ">
-                                Aromatic chicken biriyani prepared with tender chicken & fragrant rice
+                               Aromatic chicken biriyani prepared with tender chicken & fragrant rice
                             </p>
                         </div>
-                        <div class="w-44 h-32 rounded-xl overflow-hidden m-4">
+                        <div class="w-full lg:w-48 h-48 lg:h-auto order-1 lg:order-2 p-4">
                             <img src="images/Bangladeshi Menu/chicken biriyani.jpg" class="w-full h-full object-cover"
                                 alt="" />
                         </div>
@@ -250,16 +249,16 @@
             <!-- biriyani section ends -->
 
             <!-- rice section starts -->
-            <section id="rice">
+            <!-- <section id="rice">
                 <div class="text-white font-bold text-4xl mt-20 pl-52">
                     Rice
                 </div>
             </section>
-            <section class="mt-12 ml-52 space-y-8">
+            <section class="mt-12 ml-52 space-y-8"> -->
                 <!-- rice part 1 -->
                 <div class="flex flex-row gap-28 ">
                     <!--plain rice -->
-                    <div class="card card-side bg-base-100 shadow-md w-1/3 bg-gradient-to-r from-cyan-900 to-cyan-500">
+                    <!-- <div class="card card-side bg-base-100 shadow-md w-1/3 bg-gradient-to-r from-cyan-900 to-cyan-500">
                         <div class="card-body p-4 text-white">
                             <h2 class="card-title text-xl">Plain Rice</h2>
                             <p class="text-lg  font-bold">Tk 80</p>
@@ -271,9 +270,9 @@
                             <img src="images/Bangladeshi Menu/Basmati rice.jpg" class="w-full h-full object-cover"
                                 alt="" />
                         </div>
-                    </div>
+                    </div> -->
                     <!-- Pulao -->
-                    <div class="card card-side bg-base-100 shadow-md w-1/3  bg-gradient-to-r from-cyan-700 to-cyan-500">
+                    <!-- <div class="card card-side bg-base-100 shadow-md w-1/3  bg-gradient-to-r from-cyan-700 to-cyan-500">
                         <div class="card-body p-4 text-white">
                             <h2 class="card-title text-xl">Plain Polao</h2>
                             <p class="text-lg  font-bold">Tk 150</p>
@@ -285,11 +284,11 @@
                             <img src="images/Bangladeshi Menu/pulao.jpg" class="w-full h-full object-cover" alt="" />
                         </div>
                     </div>
-                </div>
+                </div> -->
                 <!-- rice part 2 -->
                 <div class="flex flex-row gap-28 ">
                     <!--panta bhat -->
-                    <div class="card card-side bg-base-100 shadow-md w-1/3 bg-gradient-to-r from-cyan-900 to-cyan-500">
+                    <!-- <div class="card card-side bg-base-100 shadow-md w-1/3 bg-gradient-to-r from-cyan-900 to-cyan-500">
                         <div class="card-body p-4 text-white">
                             <h2 class="card-title text-xl">Panta Bhat</h2>
                             <p class="text-lg  font-bold">Tk 100</p>
@@ -301,9 +300,9 @@
                             <img src="images/Bangladeshi Menu/panta bhaat.jpg" class="w-full h-full object-cover"
                                 alt="" />
                         </div>
-                    </div>
+                    </div> -->
                     <!-- khichuri-->
-                    <div class="card card-side bg-base-100 shadow-md w-1/3  bg-gradient-to-r from-cyan-700 to-cyan-500">
+                    <!-- <div class="card card-side bg-base-100 shadow-md w-1/3  bg-gradient-to-r from-cyan-700 to-cyan-500">
                         <div class="card-body p-4 text-white">
                             <h2 class="card-title text-xl">Khichuri</h2>
                             <p class="text-lg  font-bold">Tk 230</p>
@@ -315,21 +314,21 @@
                             <img src="images/Bangladeshi Menu/khichuri.jpg" class="w-full h-full object-cover" alt="" />
                         </div>
                     </div>
-                </div>
+                </div> -->
 
             </section>
             <!-- rice section ends -->
 
             <!-- fish section start  -->
-            <section id="fish">
+            <!-- <section id="fish">
                 <div class="text-white font-bold text-4xl mt-20 pl-52">
                     Fish
                 </div>
             </section>
             <section class="grid">
-                <div class="flex flex-row gap-28 mt-12 ml-52 ">
+                <div class="flex flex-row gap-28 mt-12 ml-52 "> -->
                     <!-- ilish mach -->
-                    <div class="card card-side bg-base-100 shadow-md w-1/3  bg-gradient-to-r from-cyan-900 to-cyan-500">
+                    <!-- <div class="card card-side bg-base-100 shadow-md w-1/3  bg-gradient-to-r from-cyan-900 to-cyan-500">
                         <div class="card-body p-4 text-white">
                             <h2 class="card-title text-xl ">Ilish Fish</h2>
                             <p class="text-lg  font-bold">Tk 550</p>
@@ -340,9 +339,9 @@
                         <div class="w-44 h-32 rounded-xl overflow-hidden m-4">
                             <img src="images/Bangladeshi Menu/ilish.jpg" class="w-full h-full object-cover" alt="" />
                         </div>
-                    </div>
+                    </div> -->
                     <!-- rupchanda fry -->
-                    <div class="card card-side bg-base-100 shadow-md w-1/3 bg-gradient-to-r from-cyan-700 to-cyan-500">
+                    <!-- <div class="card card-side bg-base-100 shadow-md w-1/3 bg-gradient-to-r from-cyan-700 to-cyan-500">
                         <div class="card-body p-4 text-white">
                             <h2 class="card-title text-xl ">Rupchanda Fry</h2>
                             <p class="text-lg  font-bold">Tk 900</p>
@@ -354,12 +353,12 @@
                             <img src="images/Bangladeshi Menu/rupchanda fry.jpg" class="w-full h-full object-cover"
                                 alt="" />
                         </div>
-                    </div>
+                    </div> -->
 
                 </div>
                 <div class="flex flex-row gap-28 mt-12 ml-52">
                     <!-- fish fry -->
-                    <div class="card card-side bg-base-100 shadow-md w-1/3 bg-gradient-to-r from-cyan-900 to-cyan-500 ">
+                    <!-- <div class="card card-side bg-base-100 shadow-md w-1/3 bg-gradient-to-r from-cyan-900 to-cyan-500 ">
                         <div class="card-body p-4 text-white">
                             <h2 class="card-title text-xl">Fish Fry</h2>
                             <p class="text-lg  font-bold">Tk 150</p>
@@ -370,9 +369,9 @@
                         <div class="w-44 h-32 rounded-xl overflow-hidden m-4">
                             <img src="images/Bangladeshi Menu/fish fry.jpg" class="w-full h-full object-cover" alt="" />
                         </div>
-                    </div>
+                    </div> -->
                     <!-- chingri bhapa -->
-                    <div class="card card-side bg-base-100 shadow-md w-1/3 bg-gradient-to-r from-cyan-700 to-cyan-500 ">
+                    <!-- <div class="card card-side bg-base-100 shadow-md w-1/3 bg-gradient-to-r from-cyan-700 to-cyan-500 ">
                         <div class="card-body p-4 text-white">
                             <h2 class="card-title text-xl">Chingri Bhapa</h2>
                             <p class="text-lg  font-bold">Tk 350</p>
@@ -385,20 +384,20 @@
                                 alt="" />
                         </div>
                     </div>
-                </div>
+                </div> -->
             </section>
             <!-- fish section ends  -->
 
             <!-- bhorta section start  -->
-            <section id="bhorta">
+            <!-- <section id="bhorta">
                 <div class="text-white font-bold text-4xl mt-20 pl-52">
                     Bhorta
                 </div>
             </section>
             <section class="grid">
-                <div class="flex flex-row gap-28 mt-12 ml-52">
+                <div class="flex flex-row gap-28 mt-12 ml-52"> -->
                     <!-- Aloo Bhorta -->
-                    <div class="card card-side bg-base-100 shadow-md w-1/3  bg-gradient-to-r from-cyan-900 to-cyan-500">
+                    <!-- <div class="card card-side bg-base-100 shadow-md w-1/3  bg-gradient-to-r from-cyan-900 to-cyan-500">
                         <div class="card-body p-4 text-white">
                             <h2 class="card-title text-xl">Alu Bhorta</h2>
                             <p class="text-lg  font-bold">Tk 40</p>
@@ -410,9 +409,9 @@
                             <img src="images/Bangladeshi Menu/Alo Bhorta.jpg" class="w-full h-full object-cover"
                                 alt="" />
                         </div>
-                    </div>
+                    </div> -->
                     <!-- Begun Bhorta -->
-                    <div class="card card-side bg-base-100 shadow-md w-1/3 bg-gradient-to-r from-cyan-700 to-cyan-500">
+                    <!-- <div class="card card-side bg-base-100 shadow-md w-1/3 bg-gradient-to-r from-cyan-700 to-cyan-500">
                         <div class="card-body p-4 text-white">
                             <h2 class="card-title text-xl">Begun Bhorta</h2>
                             <p class="text-lg  font-bold">Tk 70</p>
@@ -424,12 +423,12 @@
                             <img src="images/Bangladeshi Menu/Begun Bhorta.jpg" class="w-full h-full object-cover"
                                 alt="" />
                         </div>
-                    </div>
+                    </div> -->
 
                 </div>
                 <div class="flex flex-row gap-28 mt-12 ml-52">
                     <!-- Tomato Bhorta -->
-                    <div class="card card-side bg-base-100 shadow-md w-1/3  bg-gradient-to-r from-cyan-900 to-cyan-500">
+                    <!-- <div class="card card-side bg-base-100 shadow-md w-1/3  bg-gradient-to-r from-cyan-900 to-cyan-500">
                         <div class="card-body p-4  text-white">
                             <h2 class="card-title text-xl">Tomato Bhorta</h2>
                             <p class="text-lg font-bold">Tk 60</p>
@@ -441,9 +440,9 @@
                             <img src="images/Bangladeshi Menu/Tomato Bhorta.jpg" class="w-full h-full object-cover"
                                 alt="" />
                         </div>
-                    </div>
+                    </div> -->
                     <!--Daal -->
-                    <div class="card card-side bg-base-100 shadow-md w-1/3  bg-gradient-to-r from-cyan-700 to-cyan-500">
+                    <!-- <div class="card card-side bg-base-100 shadow-md w-1/3  bg-gradient-to-r from-cyan-700 to-cyan-500">
                         <div class="card-body p-4 text-white">
                             <h2 class="card-title text-xl">Daal</h2>
                             <p class="text-l  font-bold">Tk 40</p>
@@ -455,19 +454,19 @@
                             <img src="images/Bangladeshi Menu/Daal.jpg" class="w-full h-full object-cover" alt="" />
                         </div>
                     </div>
-                </div>
+                </div> -->
             </section>
             <!-- fish section ends  -->
 
             <!-- bevarage section starts  -->
-            <section id="beverage">
+            <!-- <section id="beverage">
                 <div class="text-white font-bold text-4xl mt-20 pl-52">
                     Beverage
                 </div>
             </section>
-            <section class="grid">
+            <section class="grid"> -->
                 <!-- cold coffee  -->
-                <div class="flex flex-row gap-28 mt-12 ml-52">
+                <!-- <div class="flex flex-row gap-28 mt-12 ml-52">
                     <div class="card card-side bg-base-100 shadow-md w-1/3 bg-gradient-to-r from-cyan-900 to-cyan-500 ">
                         <div class="card-body p-4 text-white">
                             <h2 class="card-title text-xl">Cold Coffee</h2>
@@ -480,9 +479,9 @@
                             <img src="images/Bangladeshi Menu/cold coffee.jpg" class="w-full h-full object-cover"
                                 alt="" />
                         </div>
-                    </div>
+                    </div> -->
                     <!-- malai cha  -->
-                    <div class="card card-side bg-base-100 shadow-md w-1/3 bg-gradient-to-r from-cyan-700 to-cyan-500 ">
+                    <!-- <div class="card card-side bg-base-100 shadow-md w-1/3 bg-gradient-to-r from-cyan-700 to-cyan-500 ">
                         <div class="card-body p-4 text-white">
                             <h2 class="card-title text-xl">Malai Cha</h2>
                             <p class="text-lg  font-bold">Tk 30</p>
@@ -493,12 +492,12 @@
                         <div class="w-44 h-32 rounded-xl overflow-hidden m-4">
                             <img src="images/Bangladeshi Menu/Cha.jpg" class="w-full h-full object-cover" alt="" />
                         </div>
-                    </div>
+                    </div> -->
                 </div>
 
                 <div class="flex flex-row gap-28 mt-12 ml-52">
                     <!-- orange juice  -->
-                    <div class="card card-side bg-base-100 shadow-md w-1/3  bg-gradient-to-r from-cyan-900 to-cyan-500">
+                    <!-- <div class="card card-side bg-base-100 shadow-md w-1/3  bg-gradient-to-r from-cyan-900 to-cyan-500">
                         <div class="card-body p-4 text-white">
                             <h2 class="card-title text-xl">Orange Juice</h2>
                             <p class="text-lg  font-bold">Tk 200</p>
@@ -510,8 +509,8 @@
                             <img src="images/Bangladeshi Menu/orange juice.jpg" class="w-full h-full object-cover"
                                 alt="" />
                         </div>
-                    </div>
-                    <!-- Lemon juice  -->
+                    </div> -->
+                    <!-- Lemon juice 
                     <div class="card card-side bg-base-100 shadow-md w-1/3  bg-gradient-to-r from-cyan-700 to-cyan-500">
                         <div class="card-body p-4 text-white">
                             <h2 class="card-title text-xl">Lemon Juice</h2>
@@ -524,21 +523,21 @@
                             <img src="images/Bangladeshi Menu/lemon juice.jpg" class="w-full h-full object-cover"
                                 alt="" />
                         </div>
-                    </div>
+                    </div> -->
                 </div>
             </section>
             <!-- bevarage section ends -->
 
             <!-- Dessert section starts -->
-            <section id="dessert">
+            <!-- <section id="dessert">
                 <div class="text-white font-bold text-4xl mt-20 pl-52">
                     Dessert
                 </div>
-            </section>
+            </section> -->
             <section>
                 <div class="flex flex-row gap-28 mt-12 ml-52">
                     <!-- faluda -->
-                    <div class="card card-side bg-base-100 shadow-md w-1/3 bg-gradient-to-r from-cyan-900 to-cyan-500 ">
+                    <!-- <div class="card card-side bg-base-100 shadow-md w-1/3 bg-gradient-to-r from-cyan-900 to-cyan-500 ">
                         <div class="card-body p-4 text-white">
                             <h2 class="card-title text-xl">Faluda</h2>
                             <p class="text-lg  font-bold">Tk 300</p>
@@ -549,9 +548,9 @@
                         <div class="w-44 h-32 rounded-xl overflow-hidden m-4">
                             <img src="images/Bangladeshi Menu/Faluda.jpg" class="w-full h-full object-cover" alt="" />
                         </div>
-                    </div>
+                    </div> -->
                     <!-- Roshmalai -->
-                    <div class="card card-side bg-base-100 shadow-md w-1/3  bg-gradient-to-r from-cyan-700 to-cyan-500">
+                    <!-- <div class="card card-side bg-base-100 shadow-md w-1/3  bg-gradient-to-r from-cyan-700 to-cyan-500">
                         <div class="card-body p-4 text-white">
                             <h2 class="card-title text-xl">Roshmalai</h2>
                             <p class="text-lg  font-bold">Tk 250</p>
@@ -563,13 +562,13 @@
                             <img src="images/Bangladeshi Menu/Roshmalai.jpg" class="w-full h-full object-cover"
                                 alt="" />
                         </div>
-                    </div>
+                    </div> -->
                 </div>
 
                 <div class="flex flex-row gap-28 mt-12 ml-52">
                     <!-- doi  -->
 
-                    <div class="card card-side bg-base-100 shadow-md w-1/3 bg-gradient-to-r from-cyan-900 to-cyan-500 ">
+                    <!-- <div class="card card-side bg-base-100 shadow-md w-1/3 bg-gradient-to-r from-cyan-900 to-cyan-500 ">
                         <div class="card-body p-4 text-white">
                             <h2 class="card-title text-xl">Doi</h2>
                             <p class="text-lg font-bold">Tk 250</p>
@@ -580,9 +579,9 @@
                         <div class="w-44 h-32 rounded-xl overflow-hidden m-4">
                             <img src="images/Bangladeshi Menu/Doi.jpg" class="w-full h-full object-cover" alt="" />
                         </div>
-                    </div>
+                    </div> -->
                     <!-- ice cream  -->
-                    <div class="card card-side bg-base-100 shadow-md w-1/3 bg-gradient-to-r from-cyan-700 to-cyan-500 ">
+                    <!-- <div class="card card-side bg-base-100 shadow-md w-1/3 bg-gradient-to-r from-cyan-700 to-cyan-500 ">
                         <div class="card-body p-4 text-white">
                             <h2 class="card-title text-xl">Ice-Cream</h2>
                             <p class="text-lg font-bold">Tk 250</p>
@@ -594,7 +593,7 @@
                             <img src="images/Bangladeshi Menu/Ice Cream.jpg" class="w-full h-full object-cover"
                                 alt="" />
                         </div>
-                    </div>
+                    </div> -->
                 </div>
             </section>
         </section>
@@ -1100,8 +1099,8 @@
 
 
     <!-- footer starts -->
-    <footer id="footer-section" class="mt-16 ml-56 hidden">
-        <div class="footer sm:footer-horizontal text-white p-10">
+    <footer id="footer-section" class="mt-16 lg:ml-56  hidden">
+        <div class="footer sm:footer-horizontal flex lg:grid text-white p-10">
             <nav>
                 <h6 class="footer-title text-2xl">Services</h6>
                 <a class="link link-hover text-xl">Branding</a>
