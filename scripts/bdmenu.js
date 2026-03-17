@@ -8,8 +8,10 @@ function showElementById(elementId) {
   element.classList.remove("hidden");
 }
 
+
 function bangladeshiMenu() {
   hideElementById("home-section");
+  hideElementById("dishes")
   showElementById("roaming-header");
   showElementById("bangladeshi-header");
   showElementById("bd-menu");
@@ -29,10 +31,13 @@ function panToHome(){
   hideElementById("panAsian-header");
   hideElementById("panAsian-menu");
   hideElementById("roaming-header");
+  showElementById("dishes");
+  
 }
 
 function panAsianMenu(){
   hideElementById("home-section");
+  hideElementById("dishes")
   showElementById("roaming-header");
   showElementById("panAsian-header");
   showElementById("panAsian-menu");
